@@ -4,9 +4,9 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.ts',
   output: {
-    filename: 'library.js',
+    filename: 'lts.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'CustomLibrary'
+    library: 'LTS'
   },
   mode: 'development',
   devtool: "source-map",
@@ -26,11 +26,13 @@ module.exports = {
     contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, 'demo/public')],
     compress: true,
     port: 9000,
-    filename: 'library.js'
+    filename: 'lts.js'
   },
   plugins: [
     new HTMLWebpackPlugin({
-        template: 'demo/index.html'
+      template: 'demo/index.html',
+      title: 'LTS',
+      description: 'Starter for Typescript Library'
     })
   ]
 };

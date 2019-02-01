@@ -9,5 +9,6 @@ export * from './lib/index';
  */
 export function configLibrary(config: any) {
     // Library config
+    console.info(config);
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "tls-code",
+  "name": "lts",
   "version": "1.0.0",
   "description": "A typescript library starter code.",
   "main": "dist/index.js",
